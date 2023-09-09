@@ -64,12 +64,12 @@ def load_and_filter_csv(file_path, outlier_percentile=0.05):
     start_line = 0
     end_line = len(lines)
     
-    for i, line in enumerate(lines):
-        if "CALIBRATING. Keep moving your sensor..." in line:
-            start_line = i + 1  # Data starts after this line
-        elif "DONE: x_offset:" in line:
-            end_line = i  # Data ends before this line
-            break
+    # for i, line in enumerate(lines):
+    #     if "CALIBRATING. Keep moving your sensor..." in line:
+    #         start_line = i + 1  # Data starts after this line
+    #     elif "DONE: x_offset:" in line:
+    #         end_line = i  # Data ends before this line
+    #         break
     
     # Filter lines and verify each line
     filtered_lines = []
