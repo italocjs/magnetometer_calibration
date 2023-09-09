@@ -45,6 +45,14 @@ The script does the following steps:
     ```python
     original_df = load_clean_csv("python_scripts\data.csv")        
     ```
+    Make sure that your has the "x,y,z" header and the data.csv is in the following format:
+    ```
+    x,y,z
+    442,3267,2121
+    ...
+    445,3262,2123
+    ```
+
     - **Figure 1 - Data with outliers:** This plot shows the initial data with outliers. It helps in understanding the noise and inconsistencies in the raw magnetometer readings.
     <div style="text-align: center;"> <img src="https://github.com/italocjs/magnetometer_calibration/raw/main/Figure%201%20-%20Data%20with%20outliers.png" alt="drawing" width="600"/>
     </div>
