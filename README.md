@@ -29,6 +29,12 @@ but there is one special with Matplotlib for plotting
 
 ![Final Calibrated Data](placeholder_image_url_2.png)
 
+Python output:
+```
+Samples considered: 27910, Noise removed percentage: 0.02
+offset values (1091.0,3388.0,2594.0)
+scale values (1.0148448043184886,1.018970189701897,0.9678249678249679)
+```
 ### C++ sample implementation for ESP32 🛠️
 The recommended way to calibrate is by logging all the sensor data and processing it with python. with the tool you will receive better results
 than with embededed processing, you will also be able to visually check if the calibration is good.
