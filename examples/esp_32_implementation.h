@@ -127,7 +127,8 @@ void taskQMC5883L(void* pvParameters)
 			ESP_LOGD(QMC_TAG, "Waiting for semaphore to clear");
 			if (semaphore_ok)
 			{
-				calibrate_example();
+				csv_dump_example(); //This is the recommended way to calibrate the compass
+				// calibrate_example(); 
 				xSemaphoreGive(xI2CSemaphore);
 			}
 		}
